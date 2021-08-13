@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Results</title>
+<script>
+function showDiv() {
+   document.getElementById('result').style.display = "block";
+}
+</script>
+</head>
+<body>
+  <form>
+    <label for="term">TERM:</label>
+    <select name="term" id="term">
+      <option value="1">TERM 1</option>
+      <option value="2">TERM 2</option>
+    </select>
+    <br><br>
+    <label for="cl">CLASS:</label>
+    <select name="cl" id="cl">
+    <option value="12">12th</option>
+    <option value="11">11th</option>
+    <option value="10">10th</option>
+    <option value="11">9th</option>
+    </select>
+    <br><br>
+    <label for="reg">REGISTRATION NUMBER:</label>
+    <input type="text" id="reg" name="reg">
+  </form>
+<input type="button" name="answer" value="SUBMIT" onclick="showDiv()" />
+<div id="result"  style="display:none;" > 
+  <table border=3 bgcolor="lightBlue">
+  <tr>
+    <th> subject</th>
+	<th> Marks</th>
+	<th> Grade</th>
+	<th> Remark</th>	
+  </tr>
+  <tr>
+    <td> English</td>
+	<td> 89</td>
+	<td> B</td>
+	<td> Pass</td>	
+  </tr>
+  <tr>
+    <td> Hindi</td>
+	<td> 32</td>
+	<td> E</td>
+	<td> Fail</td>	
+  </tr>
+  <tr>
+    <td> Mathematics</td>
+	<td> 95</td>
+	<td> A</td>
+	<td> Pass</td>	
+  </tr>
+  <tr>
+    <td> Science</td>
+	<td> 90</td>
+	<td> B</td>
+	<td> Pass</td>	
+  </tr>
+  <tr>
+    <td> Social Science</td>
+	<td> 79</td>
+	<td> C</td>
+	<td> Pass</td>	
+  </tr>
+  </table>
+</div>
+</body>
+</html>
